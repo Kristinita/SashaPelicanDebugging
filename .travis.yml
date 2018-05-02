@@ -1,0 +1,14 @@
+# Depth
+git:
+  depth: 1
+
+language: python
+
+python: 3.6
+
+install:
+  - pip install --upgrade pip
+  - pip install gitpython markdown pelican
+
+script:
+  - pelican content -s pelicanconf.py --debug --fatal warnings
