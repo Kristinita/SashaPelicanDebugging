@@ -9,6 +9,7 @@ SITEURL = ''
 PATH = 'content'
 
 TIMEZONE = 'Europe/Moscow'
+DEFAULT_DATE_FORMAT = '%Y-%m-%dT%H:%M:%SZ'
 
 DEFAULT_LANG = 'English'
 
@@ -36,9 +37,10 @@ DEFAULT_PAGINATION = 10
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = [
-    'filetime_from_git',
-    'permalinks',
+    'loadcsv'
 ]
+
+THEME = 'themes/notmyidea'
 
 # filetime_from_git
 # https://github.com/getpelican/pelican-plugins/tree/master/filetime_from_git#other-options
