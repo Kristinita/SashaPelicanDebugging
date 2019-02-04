@@ -9,7 +9,7 @@ python: 3.7
 
 install:
   - pip install --upgrade pip
-  - pip install gitpython markdown pelican
+  - pip install markdown pelican
 
 script:
   - pelican content -s pelicanconf.py --debug --fatal warnings
