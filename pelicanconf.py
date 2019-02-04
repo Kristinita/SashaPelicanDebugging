@@ -18,7 +18,7 @@ DEFAULT_LANG = 'en'
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = [
-    'pelican-open_graph'
+    'open_graph'
 ]
 
 THEME = 'themes/notmyidea'
