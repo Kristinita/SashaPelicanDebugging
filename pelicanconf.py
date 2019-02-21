@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Sasha Chernykh'
 SITENAME = 'SashaPelicanDebugging'
-SITEURL = ''
+SITEURL = '.'
 
 PATH = 'content'
 
@@ -18,8 +18,11 @@ DEFAULT_LANG = 'en'
 
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = [
-    'open_graph'
+    'json_feed'
 ]
+
+FEED_ALL_JSON = 'feeds/all.json'
+CATEGORY_FEED_JSON = 'feeds/{slug}.json'
 
 THEME = 'themes/notmyidea'
 

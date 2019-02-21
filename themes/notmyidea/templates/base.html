@@ -10,18 +10,8 @@
         {% if FEED_ALL_RSS %}
         <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
         {% endif %}
-        {% if article %}
-        {% for tag in article.ogtags %}
-        <meta property="{{tag[0]}}" content="{{tag[1]|striptags|e}}" />
-        {% endfor %}
-        {% endif %}
-
-        {% if page  %}
-        {% for tag in page.ogtags %}
-        <meta property="{{tag[0]}}" content="{{tag[1]|striptags|e}}" />
-        {% endfor %}
-        {% endif %}
-        {% block base_json_ld %}{% endblock %}
+        <link rel="alternate" type="application/json" title="JSON Feed" href="https://www.example.com/feeds/all.json">
+        <link rel="alternate" type="application/json" title="JSON Feed" href="https://www.example.com/feeds/my_category.json">
 </head>
 
 <body id="index" class="home">
