@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
 
 AUTHOR = 'Sasha Chernykh'
 SITENAME = 'SashaPelicanDebugging'
@@ -9,23 +8,17 @@ SITEURL = '.'
 PATH = 'content'
 
 TIMEZONE = 'Europe/Moscow'
-DEFAULT_DATE_FORMAT = '%Y-%m-%dT%H:%M:%SZ'
 
 DEFAULT_LANG = 'en'
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+# [INFO] Use article name when preserve the slug:
+# https://docs.getpelican.com/en/stable/settings.html#url-settings
+SLUGIFY_SOURCE = 'basename'
 
-PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = [
-    'json_feed'
-]
+# [INFO] Preserve case of article filename
+SLUGIFY_PRESERVE_CASE = True
 
-FEED_ALL_JSON = 'feeds/all.json'
-CATEGORY_FEED_JSON = 'feeds/{slug}.json'
-
-THEME = 'themes/notmyidea'
-
-ARTICLE_PATHS = ['SashaContent']
-
-SITEURL = '.'
+# [INFO] Get title from article filename:
+# https://docs.getpelican.com/en/stable/settings.html#metadata
+# https://github.com/getpelican/pelican/commit/2e82a53cdf3f1f9d66557850cc2811479d5bb645
+FILENAME_METADATA = '(?P<title>.*)'

@@ -1,14 +1,16 @@
 git:
   depth: 1
 
-dist: xenial
+dist: focal
+
 language: python
 
-python: 3.7
+python: 3.8
 
 install:
 - pip install --upgrade pip
 - pip install markdown pelican
 
 script:
-- pelican content -s pelicanconf.py --debug --fatal warnings
+- pelican content -s pelicanconf.py --fatal warnings --verbose
+- ls output

@@ -10,6 +10,10 @@
 
 ###Personal###
 
+# Output folder
+
+output/
+
 # Personal folder settings
 
 desktop.ini
