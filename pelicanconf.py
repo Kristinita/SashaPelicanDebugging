@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*- #
+"""MCVE for automatically generated title metadata."""
 
 AUTHOR = 'Sasha Chernykh'
 SITENAME = 'SashaPelicanDebugging'
