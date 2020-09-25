@@ -1,4 +1,4 @@
-"""MCVE for automatically generated title metadata."""
+"""MCVE."""
 
 AUTHOR = 'Sasha Chernykh'
 SITENAME = 'SashaPelicanDebugging'
@@ -19,5 +19,6 @@ SLUGIFY_PRESERVE_CASE = True
 
 # [INFO] Get title from article filename:
 # https://docs.getpelican.com/en/stable/settings.html#metadata
+# https://github.com/getpelican/pelican/issues/2107
 # https://github.com/getpelican/pelican/commit/2e82a53cdf3f1f9d66557850cc2811479d5bb645
 FILENAME_METADATA = '(?P<title>.*)'

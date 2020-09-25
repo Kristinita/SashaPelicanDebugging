@@ -13,4 +13,4 @@ install:
 
 script:
 - pelican content -s pelicanconf.py --fatal warnings --verbose
--  grep -E "<title>.*</title>" output/Kira-Goddess.html
+- grep -E "<title>.*</title>" output/Kira-Goddess.html
