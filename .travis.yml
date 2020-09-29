@@ -1,6 +1,8 @@
 git:
   depth: 1
 
+cache: false
+
 dist: focal
 
 language: python
@@ -9,8 +11,13 @@ python: 3.8
 
 install:
 - pip install --upgrade pip
-- pip install markdown pelican
+- pip install flake8 pydocstyle pylint pylint_runner
 
 script:
 - pelican content -s pelicanconf.py --fatal warnings --verbose
-- grep -E "<title>.*</title>" output/Kira-Goddess.html
+
+after_success:
+- flake8 .
+- pydocstyle .
+- pylint_runner
+- grep -zorP "<table>(.|\r|\n)*</table>" output --exclude-dir={author,category} --exclude=index.html

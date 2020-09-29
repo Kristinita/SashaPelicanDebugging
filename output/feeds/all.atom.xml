@@ -1,2 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>SashaPelicanDebugging</title><link href="./" rel="alternate"></link><link href="feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2020-09-24T18:57:33+03:00</updated><entry><title>Kira-Goddess</title><link href="Kira-Goddess.html" rel="alternate"></link><published>2020-09-24T18:57:33+03:00</published><updated>2020-09-24T18:57:33+03:00</updated><author><name>Sasha Chernykh</name></author><id>tag:None,2020-09-24:Kira-Goddess.html</id><content type="html">&lt;p&gt;Kira Goddess!&lt;/p&gt;</content><category term="misc"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>SashaPelicanDebugging</title><link href="https://kristinita.netlify.app/" rel="alternate"></link><link href="https://kristinita.netlify.app/feeds/all.atom.xml" rel="self"></link><id>https://kristinita.netlify.app/</id><updated>2020-09-24T18:57:33+03:00</updated><entry><title>KiraArticle</title><link href="https://kristinita.netlify.app/KiraArticle.html" rel="alternate"></link><published>2020-09-24T18:57:33+03:00</published><updated>2020-09-24T18:57:33+03:00</updated><author><name>Sasha Chernykh</name></author><id>tag:kristinita.netlify.app,2020-09-24:/KiraArticle.html</id><content type="html">&lt;p&gt;
+&lt;div class="justtable"&gt;
+    &lt;table&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Kira&lt;/th&gt;
+            &lt;th&gt;Goddess&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;&lt;/p&gt;</content><category term="Articles"></category></entry><entry><title>KiraArticleTranslation</title><link href="https://kristinita.netlify.app/KiraArticle-ru.html" rel="alternate"></link><published>2020-09-24T18:57:33+03:00</published><updated>2020-09-24T18:57:33+03:00</updated><author><name>Sasha Chernykh</name></author><id>tag:kristinita.netlify.app,2020-09-24:/KiraArticle-ru.html</id><content type="html">&lt;p&gt;
+&lt;div class="justtable"&gt;
+    &lt;table&gt;
+        &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Kira&lt;/th&gt;
+            &lt;th&gt;Goddess&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;&lt;/p&gt;</content><category term="Articles"></category></entry></feed>
