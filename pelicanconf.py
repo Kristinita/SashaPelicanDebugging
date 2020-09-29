@@ -19,9 +19,9 @@ PAGE_PATHS = [
 ]
 
 PLUGIN_PATHS = [
-    'plugins'
+    'plugins/just_table'
 ]
 
 PLUGINS = [
-    'just_table'
+    'pelican_just_table'
 ]
