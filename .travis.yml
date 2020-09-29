@@ -1,9 +1,11 @@
+os: linux
+
+dist: focal
+
 git:
   depth: 1
 
 cache: false
-
-dist: focal
 
 language: python
 
@@ -11,7 +13,7 @@ python: 3.8
 
 install:
 - pip install --upgrade pip
-- pip install flake8 pydocstyle pylint pylint_runner
+- pip install pelican markdown flake8 pydocstyle pylint pylint_runner
 
 script:
 - pelican content -s pelicanconf.py --fatal warnings --verbose
