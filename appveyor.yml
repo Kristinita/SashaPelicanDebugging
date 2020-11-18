@@ -5,7 +5,7 @@ image: Visual Studio 2019
 clone_depth: 1
 
 environment:
-  PYTHON: C:\Python38-x64
+  PYTHON: C:\Python39-x64
 
 init:
 - SETX PYTHONIOENCODING utf-8
@@ -13,7 +13,8 @@ init:
 
 install:
 - "%PYTHON%\\python -m pip install --upgrade pip"
-- "%PYTHON%\\python -m pip install pelican markdown"
+- "%PYTHON%\\python -m pip install -Iv pelican==4.5.0"
+- "%PYTHON%\\python -m pip install markdown"
 
 build_script:
 - pelican content -s pelicanconf.py --fatal warnings --debug
