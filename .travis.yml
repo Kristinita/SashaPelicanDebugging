@@ -9,17 +9,11 @@ cache: false
 
 language: python
 
-python: 3.8
+python: 3.9
 
 install:
 - pip install --upgrade pip
-- pip install pelican markdown flake8 pydocstyle pylint pylint_runner
+- pip install pelican markdown
 
 script:
-- pelican content -s pelicanconf.py --fatal warnings --verbose
-
-after_success:
-- flake8 .
-- pydocstyle .
-- pylint_runner
-- grep -zorP "<table>(.|\r|\n)*</table>" output --exclude-dir={author,category} --exclude=index.html
+- pelican content -s pelicanconf.py --fatal warnings --debug

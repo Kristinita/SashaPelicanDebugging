@@ -14,14 +14,14 @@ ARTICLE_PATHS = [
     'Articles'
 ]
 
-PAGE_PATHS = [
-    'Pages'
-]
-
 PLUGIN_PATHS = [
-    'plugins/just_table'
+    'plugins/interlinks'
 ]
 
 PLUGINS = [
-    'pelican_just_table'
+    'interlinks'
 ]
+
+INTERLINKS = {
+    'kristinita': 'https://kristinita.netlify.app/#gsc.tab=0&gsc.q='
+}

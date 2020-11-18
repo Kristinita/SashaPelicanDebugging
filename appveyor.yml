@@ -1,0 +1,19 @@
+platform: x64
+
+image: Visual Studio 2019
+
+clone_depth: 1
+
+environment:
+  PYTHON: C:\Python39-x64
+
+init:
+- SETX PYTHONIOENCODING utf-8
+- "SET PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+
+install:
+- "%PYTHON%\\python -m pip install --upgrade pip"
+- "%PYTHON%\\python -m pip install pelican markdown"
+
+build_script:
+- pelican content -s pelicanconf.py --fatal warnings --debug
