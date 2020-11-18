@@ -13,7 +13,6 @@ python: 3.9
 
 install:
 - pip install --upgrade pip
-- pip install -Iv pelican==4.5.0
 - pip install pelican markdown
 
 script:

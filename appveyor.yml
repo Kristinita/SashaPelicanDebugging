@@ -13,8 +13,7 @@ init:
 
 install:
 - "%PYTHON%\\python -m pip install --upgrade pip"
-- "%PYTHON%\\python -m pip install -Iv pelican==4.5.0"
-- "%PYTHON%\\python -m pip install markdown"
+- "%PYTHON%\\python -m pip install pelican markdown"
 
 build_script:
 - pelican content -s pelicanconf.py --fatal warnings --debug

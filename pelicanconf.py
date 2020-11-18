@@ -15,11 +15,11 @@ ARTICLE_PATHS = [
 ]
 
 PLUGIN_PATHS = [
-    'plugins/interlinks'
+    'plugins'
 ]
 
 PLUGINS = [
-    'interlinks'
+    'interlinks',
 ]
 
 INTERLINKS = {
