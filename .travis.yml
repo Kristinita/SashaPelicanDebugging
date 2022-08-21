@@ -19,8 +19,8 @@ install:
 # - curl https://sh.rustup.rs -sSf | sh -s -- -y
 # - source "$HOME/.cargo/env"
 - cargo install stork-search --locked
-- pip install --upgrade pip
-- pip install pelican markdown pelican-search
+- python -m pip install --upgrade pip
+- python -m pip install pelican markdown pelican-search
 
 script:
 - stork --version
