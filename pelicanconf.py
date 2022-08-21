@@ -14,14 +14,8 @@ ARTICLE_PATHS = [
     'Articles'
 ]
 
-PLUGIN_PATHS = [
-    'plugins'
-]
+PLUGINS = ['pelican-search']
 
-PLUGINS = [
-    'interlinks',
-]
-
-INTERLINKS = {
-    'kristinita': 'https://kristinita.netlify.app/#gsc.tab=0&gsc.q='
+MARKDOWN = {
+    'output_format': 'html5',
 }

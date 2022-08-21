@@ -1,6 +1,6 @@
 os: linux
 
-dist: focal
+dist: jemmy
 
 git:
   depth: 1
@@ -9,11 +9,15 @@ cache: false
 
 language: python
 
-python: 3.9
+python: 3.10
 
 install:
+- curl https://sh.rustup.rs -sSf | sh -s -- -y
+- source "$HOME/.cargo/env"
+- cargo install stork-search --locked
 - pip install --upgrade pip
-- pip install pelican markdown beautifulsoup4
+- pip install pelican markdown pelican-search
 
 script:
+- stork --help
 - pelican content -s pelicanconf.py --fatal warnings --debug
