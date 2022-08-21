@@ -1,23 +1,26 @@
-os: linux
+os:
+- linux
+- windows
 
-dist: jemmy
+dist: jammy
 
 git:
   depth: 1
 
 cache: false
 
-language: python
+language: rust
 
-python: 3.10
+rust: stable
 
 install:
-- curl https://sh.rustup.rs -sSf | sh -s -- -y
-- source "$HOME/.cargo/env"
+- if [ "$TRAVIS_OS_NAME" == "windows" ]; choco install python; fi
+# - curl https://sh.rustup.rs -sSf | sh -s -- -y
+# - source "$HOME/.cargo/env"
 - cargo install stork-search --locked
 - pip install --upgrade pip
 - pip install pelican markdown pelican-search
 
 script:
-- stork --help
+- stork --version
 - pelican content -s pelicanconf.py --fatal warnings --debug
