@@ -14,9 +14,9 @@ language: rust
 rust: stable
 
 install:
-- if [ "$TRAVIS_OS_NAME" == "windows" ]; then choco install python; fi
-- if [ "$TRAVIS_OS_NAME" == "windows" ]; then RefreshEnv.cmd & python -m pip install --upgrade pip; fi
-- if [ "$TRAVIS_OS_NAME" == "windows" ]; then RefreshEnv.cmd & python -m pip install pelican markdown pelican-search; fi
+- if [ "$TRAVIS_OS_NAME" == "windows" ]; then choco install python3; fi
+- if [ "$TRAVIS_OS_NAME" == "windows" ]; then RefreshEnv.cmd & python3 -m pip install --upgrade pip; fi
+- if [ "$TRAVIS_OS_NAME" == "windows" ]; then RefreshEnv.cmd & python3 -m pip install pelican markdown pelican-search; fi
 # - curl https://sh.rustup.rs -sSf | sh -s -- -y
 # - source "$HOME/.cargo/env"
 - cargo install stork-search --locked
