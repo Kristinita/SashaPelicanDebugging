@@ -14,7 +14,7 @@ ARTICLE_PATHS = [
     'Articles'
 ]
 
-PLUGINS = ['pelican-search']
+SEARCH_HTML_SELECTOR = "body"
 
 MARKDOWN = {
     'output_format': 'html5',

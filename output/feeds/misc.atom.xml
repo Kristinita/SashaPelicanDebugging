@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Поиск Кристиниты - IT-articles</title>
+	<link href="https://kristinita.netlify.app/" rel="alternate"/>
+	<link href="https://kristinita.netlify.app/feeds/misc.atom.xml" rel="self"/>
+	<id>https://kristinita.netlify.app/</id>
+	<updated>2020-09-24T18:57:33+03:00</updated>
+	<entry>
+		<title>Kira Goddess</title>
+		<link href="https://kristinita.netlify.app/kira-goddess.html" rel="alternate"/>
+		<published>2020-09-24T18:57:33+03:00</published>
+		<updated>2020-09-24T18:57:33+03:00</updated>
+		<author>
+			<name>Sasha Chernykh</name>
+		</author>
+		<id>tag:kristinita.netlify.app,2020-09-24:/kira-goddess.html</id>
+		<summary type="html">&lt;p&gt;Tutorial, how to get some variable parameters for your Sublime Text &lt;br&gt;&lt;br&gt; &lt;img alt=&quot;Color scheme and theme&quot; src=&quot;https://i.imgur.com/nwNgLkR.png&quot;&gt;&lt;/p&gt;</summary>
+		<content type="html">&lt;p&gt;Kira Goddess!&lt;/p&gt;</content>
+		<category term="misc"/>
+		<category term="IT-articles"/>
+		<category term="it-articles"/>
+		<category term="sublime-text"/>
+		<category term="release"/>
+	</entry>
+</feed>

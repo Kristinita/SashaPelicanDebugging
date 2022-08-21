@@ -15,6 +15,7 @@ rust: stable
 
 install:
 - if [ "$TRAVIS_OS_NAME" == "windows" ]; then choco install python; fi
+- if [ "$TRAVIS_OS_NAME" == "windows" ]; then refreshenv; fi
 # - curl https://sh.rustup.rs -sSf | sh -s -- -y
 # - source "$HOME/.cargo/env"
 - cargo install stork-search --locked
