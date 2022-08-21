@@ -1,8 +1,7 @@
-os:
-- windows
-- linux
+os: windows
+# - linux
 
-dist: jammy
+# dist: jammy
 
 git:
   depth: 1
@@ -14,9 +13,9 @@ language: rust
 rust: stable
 
 install:
-- if [ "$TRAVIS_OS_NAME" == "windows" ]; then choco install python3; fi
-- if [ "$TRAVIS_OS_NAME" == "windows" ]; then RefreshEnv.cmd & python3 -m pip install --upgrade pip; fi
-- if [ "$TRAVIS_OS_NAME" == "windows" ]; then RefreshEnv.cmd & python3 -m pip install pelican markdown pelican-search; fi
+- choco install python
+- pip install --upgrade pip
+- pip install pelican markdown pelican-search
 # - curl https://sh.rustup.rs -sSf | sh -s -- -y
 # - source "$HOME/.cargo/env"
 - cargo install stork-search --locked
