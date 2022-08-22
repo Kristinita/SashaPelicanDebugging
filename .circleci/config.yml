@@ -1,0 +1,12 @@
+version: 2.1
+
+jobs:
+  build:
+    machine:
+      image: ubuntu-2204
+    steps:
+    - run: pip install pelican markdown pelican-search pelican-sitemap
+    - run: cargo install stork-search --locked
+    - run: stork --version
+    - run: pelican content -s pelicanconf.py --fatal warnings --debug
+    - run: ls output
