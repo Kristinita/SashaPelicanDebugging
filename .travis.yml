@@ -1,8 +1,3 @@
-os: windows
-# - linux
-
-# dist: jammy
-
 git:
   depth: 1
 
@@ -12,11 +7,18 @@ language: rust
 
 rust: stable
 
-env:
-- PATH=/c/Python310:/c/Python310/Scripts:$PATH
+jobs:
+  include:
+    - name: "Ubuntu 22.04 LTS (Jammy Jellyfish)"
+      os: linux
+      dist: jammy
+    - name: "Windows Server 1809"
+      os: windows
+      env:
+        - PATH=/c/Python310:/c/Python310/Scripts:$PATH
+      before_install: "choco install python"
 
 install:
-- choco install python
 - python -m pip install --upgrade pip
 - pip install pelican markdown pelican-search
 # - curl https://sh.rustup.rs -sSf | sh -s -- -y
