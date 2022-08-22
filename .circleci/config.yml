@@ -7,9 +7,9 @@ jobs:
       resource_class: windows.medium
     steps:
     - checkout
-    - run: pip install pelican markdown pelican-search
     - run: choco install rust -y
     - run: cargo install stork-search --locked
     - run: stork --version
+    - run: pip install pelican markdown pelican-search
     - run: pelican content -s pelicanconf.py --fatal warnings --debug
     - run: dir output
