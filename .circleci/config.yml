@@ -5,7 +5,8 @@ jobs:
     machine:
       image: ubuntu-2204:current
     steps:
-    - run: pip install pelican markdown pelican-search pelican-sitemap
+    - run: pyenv global 3.10.6
+    - run: pip install pelican markdown pelican-search
     - run: cargo install stork-search --locked
     - run: stork --version
     - run: pelican content -s pelicanconf.py --fatal warnings --debug
