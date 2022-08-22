@@ -1,0 +1,8 @@
+[input]
+base_directory = "D:\\SashaDemoRepositories/SashaPelicanDebugging/output"
+html_selector = "body"
+
+[[input.files]]
+path = "KiraArticle.html"
+url = "/KiraArticle.html"
+title = "KiraArticle"

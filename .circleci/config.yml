@@ -1,19 +1,13 @@
 version: 2.1
 
-orbs:
-  python: circleci/python@2.0.3
-  rust: circleci/rust@1.6.0
-
 jobs:
   build:
-    # machine:
-    #   image: ubuntu-2204:current
+    machine:
+      image: "windows-server-2022-gui:current"
     steps:
     - checkout
-    # - run: pyenv global 3.10.5
     - run: pip install pelican markdown pelican-search
-    # - run: curl https://sh.rustup.rs -sSf | sh -s -- -y
     - run: cargo install stork-search --locked
     - run: stork --version
     - run: pelican content -s pelicanconf.py --fatal warnings --debug
-    - run: ls output
+    - run: dir output
