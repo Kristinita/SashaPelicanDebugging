@@ -5,6 +5,7 @@ jobs:
     machine:
       image: ubuntu-2204:current
     steps:
+    - checkout
     - run: pyenv global 3.10.5
     - run: pip install pelican markdown pelican-search
     - run: curl https://sh.rustup.rs -sSf | sh -s -- -y
