@@ -1,5 +1,5 @@
 [input]
-base_directory = "D:\\SashaDemoRepositories/SashaPelicanDebugging/output"
+base_directory = "D:/SashaDemoRepositories/SashaPelicanDebugging/output"
 html_selector = "body"
 
 [[input.files]]

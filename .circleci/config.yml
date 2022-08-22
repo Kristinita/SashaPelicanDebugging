@@ -8,7 +8,7 @@ jobs:
     - checkout
     - run: pyenv global 3.10.5
     - run: pip install pelican markdown
-    - run: pip install git+https://github.com/Kristinita/search.git@KiraFixWindowsPath
+    - run: pip install pelican-search
     - run: curl https://sh.rustup.rs -sSf | sh -s -- -y
     - run: cargo install stork-search --locked
     - run: stork --version
