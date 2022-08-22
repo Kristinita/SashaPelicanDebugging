@@ -27,4 +27,4 @@ PLUGINS = [
 
 SEARCH_HTML_SELECTOR = "body"
 
-OUTPUT_PATH = 'output'
+OUTPUT_PATH = 'output/'
