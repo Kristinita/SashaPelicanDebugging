@@ -3,9 +3,9 @@ git:
 
 cache: false
 
-language: python
+language: rust
 
-python: 3.10
+rust: stable
 
 jobs:
   include:
@@ -16,6 +16,7 @@ jobs:
       os: windows
       env:
         - PATH=/c/Python310:/c/Python310/Scripts:$PATH
+      before_install: "choco install python"
 
 install:
 - python -m pip install --upgrade pip
