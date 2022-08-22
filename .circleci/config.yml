@@ -3,13 +3,15 @@ version: 2.1
 jobs:
   build:
     machine:
-      image: "windows-server-2022-gui:current"
-      resource_class: windows.medium
+      image: ubuntu-2204:current
     steps:
     - checkout
-    - run: choco install rust -y
+    - run: pyenv global 3.10.5
+    - run: pip install pelican markdown
+    - run: pip install git+https://github.com/Kristinita/search.git@KiraFixWindowsPath
+    - run: curl https://sh.rustup.rs -sSf | sh -s -- -y
     - run: cargo install stork-search --locked
     - run: stork --version
-    - run: pip install pelican markdown pelican-search
     - run: pelican content -s pelicanconf.py --fatal warnings --debug
-    - run: dir output
+    - run: ls output
+    - run: cat output/search.toml
