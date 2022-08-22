@@ -12,6 +12,10 @@ language: rust
 
 rust: stable
 
+env:
+- PATH=/c/Python310:/c/Python310/Scripts:$PATH
+- PYTHONIOENCODING=UTF-8
+
 install:
 - choco install python
 - pip install --upgrade pip
