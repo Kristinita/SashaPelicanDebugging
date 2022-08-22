@@ -25,6 +25,12 @@ PLUGIN_PATHS = [
     'pelican-plugins'
 ]
 
+PLUGINS = [
+    'sitemap',
+    'search',
+    'neighbors'
+]
+
 SEARCH_HTML_SELECTOR = "body"
 
 SITEMAP = {
