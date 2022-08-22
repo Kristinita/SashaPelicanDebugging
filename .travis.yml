@@ -20,7 +20,13 @@ jobs:
 
 install:
 - python -m pip install --upgrade pip
-- pip install pelican markdown
+- pip install pelican markdown pelican-search pelican-sitemap
+- cargo install stork-search --locked
 
 script:
+- stork --version
 - pelican content -s pelicanconf.py --fatal warnings --debug
+
+after_script:
+- if [ "$TRAVIS_OS_NAME" == "linux" ]; then ls output; fi
+- if [ "$TRAVIS_OS_NAME" == "windows" ]; then dir output; fi

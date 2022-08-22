@@ -1,5 +1,6 @@
 """MCVE."""
 
+# [INFO] Default settings
 AUTHOR = 'Sasha Chernykh'
 SITENAME = 'SashaPelicanDebugging'
 SITEURL = 'https://kristinita.netlify.app'
@@ -14,8 +15,32 @@ ARTICLE_PATHS = [
     'Articles'
 ]
 
-SEARCH_HTML_SELECTOR = "body"
-
 MARKDOWN = {
     'output_format': 'html5',
+}
+
+
+# [INFO] Settings for issue
+PLUGIN_PATHS = [
+    'pelican-plugins'
+]
+
+PLUGINS = [
+    'neighbors'
+]
+
+SEARCH_HTML_SELECTOR = "body"
+
+SITEMAP = {
+    "format": "xml",
+    "priorities": {
+        "articles": 0.5,
+        "indexes": 0.5,
+        "pages": 0.5
+    },
+    "changefreqs": {
+        "articles": "monthly",
+        "indexes": "daily",
+        "pages": "monthly"
+    }
 }
