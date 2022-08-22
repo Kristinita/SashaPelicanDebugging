@@ -14,11 +14,10 @@ rust: stable
 
 env:
 - PATH=/c/Python310:/c/Python310/Scripts:$PATH
-- PYTHONIOENCODING=UTF-8
 
 install:
 - choco install python
-- pip install --upgrade pip
+- python -m pip install --upgrade pip
 - pip install pelican markdown pelican-search
 # - curl https://sh.rustup.rs -sSf | sh -s -- -y
 # - source "$HOME/.cargo/env"
