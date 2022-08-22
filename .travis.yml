@@ -3,9 +3,9 @@ git:
 
 cache: false
 
-language: rust
+language: python
 
-rust: stable
+python: 3.10
 
 jobs:
   include:
@@ -16,17 +16,10 @@ jobs:
       os: windows
       env:
         - PATH=/c/Python310:/c/Python310/Scripts:$PATH
-      before_install: "choco install python"
 
 install:
 - python -m pip install --upgrade pip
-- pip install pelican markdown pelican-search
-# - curl https://sh.rustup.rs -sSf | sh -s -- -y
-# - source "$HOME/.cargo/env"
-- cargo install stork-search --locked
-# - pip install --upgrade pip
-# - pip install pelican markdown pelican-search
+- pip install pelican markdown
 
 script:
-- stork --version
 - pelican content -s pelicanconf.py --fatal warnings --debug
